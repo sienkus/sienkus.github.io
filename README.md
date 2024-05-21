@@ -5,53 +5,48 @@
 Highly motivated and detail-oriented IT professional with experience in managing IT infrastructures, developing software applications, and providing technical support. Strong passion for STEM fields, particularly Artificial Intelligence, Machine Learning, and Cloud Computing.
 
 ## Education
-
-* Bachelor's in Business Administration- Accounting (2021)
 * African Development University, Niamey, Niger
-* Dean's List of Academic Excellence
-* Medal of Merit for Academic Excellence
+    + Bachelor's in Business Administration -Accounting (2021)
+    + Dean's List of Academic Excellence
+    + Medal of Merit for Academic Excellence
 
 ## Certifications
 
-* IBM AI Engineering (2023)
-* Introduction to Computer Vision and Image Processing (2023)
-* Deep Neural Networks with PyTorch (2023)
-* Principles of Intelligent Behavior in Biological and Social Systems (PIBSS) African Development University, Niamey, Niger (2021-2023)
+* IBM AI Engineering                                                                          October 2023
+* Introduction to Computer Vision and Image Processing                                        October 2023
+* Deep Neural Networks with PyTorch (with Honors)                                           September 2023
+* Building Deep Learning Models with TensorFlow                                             September 2023
+* Introduction to Deep Learning & Neural Networks with Keras                                September 2023
+* Machine Learning with Python                                                                  April 2023
+* Introduction to Artificial Intelligence and Robotics				                          January 2023
+* Project Name: Crop simulation and irrigation optimizer with Nevergrad (Facebook Research)
+3rd Prize, Best Participant out of 150
+* Data Structures                                                                                June 2022
+* Google Africa Developer - Cloud Engineer                                                  December 2021 
+* Google Digital Skills                                                                      January 2020 
+* International Youth Math Competition (Bronze Prize)                                        November 2019
 
 ## Professional Experience
 
-### Research Fellow - AI Futures Fellowship
-
-Mexico City, Mexico
+### Research Fellow 
+AI Futures Fellowship, Mexico City, Mexico                                 January 2024 - March 2024
 Research Fellow - AI and Technical Research
-January 2024 - February 2024
-Research Project: Singular Learning Theory of Double Descent
+* Research Project: Singular Learning Theory of Double Descent
 Supervisor: Jesse Hoogland
 
-### Research Apprentice - ILINA Fellowship Program
-
-Nairobi, Kenya
-Research Apprentice - AI and Technical Research
-July 2023 - October 2023
+### Research Fellow
+ILINA Fellowship Program, Nairobi, Kenya                                          July 2023 - October 2023
 Supervisor: Jake Mendel
-Worked on Machine Learning projects with PyTorch for technical AI alignment using the Redwood Research ML Camp 2.0 curriculum
-Participated in the Principles of Intelligent Behavior in Biological and Social Systems (PIBSS) African Development University, Niamey, Niger
+* Worked on Machine Learning projects with PyTorch for technical AI alignment using the Redwood Research ML Camp 2.0 curriculum
+* Participated in the Principles of Intelligent Behavior in Biological and Social Systems (PIBSS)
 
 ### Technical Support Coordinator - Information Technology
 
-November 2021 - July 2023
-African Development University, Niamey, Niger
-Co-founded the Digital and IT Department of the university
-Provided technical support for 7 technical project roles to support the roll-out of new applications
-Co-organized the first Hackathon and the first AI Bootcamp of the university
-Managed IT infrastructures in 6 locations
-
-### Cloud Engineer - Google Africa Developer
-
-December 2021 - Present
-Google Africa, Nairobi, Kenya
-Designed and implemented cloud-based solutions for clients
-Utilized Google Cloud Platform (GCP) to develop scalable applications
+African Development University, Niamey, Niger                                    November 2021 - July 2023
+* Co-founded the Digital and IT Department of the university
+* Provided technical support for 7 technical project roles to support the roll-out of new applications
+* Co-organized the first Hackathon and the first AI Bootcamp of the university
+* Managed IT infrastructures in 6 locations
 
 ## Leadership Activities
 
