@@ -1,8 +1,8 @@
 # IT Professional & Independent AI Researcher
 
-## Summary
+## Technical Skills
 
-Highly motivated and detail-oriented IT professional with experience in managing IT infrastructures, developing software applications, and providing technical support. Strong passion for STEM fields, particularly Artificial Intelligence, Machine Learning, and Cloud Computing.
+**Programming (Python, C, HTML & CSS, etc.), Machine Learning & Deep Learning with PyTorch, TensorFlow, Keras & OpenCV, Technical Support, Technical Research, Graphic Design & Illustration (Adobe Suite, Canva, etc.), Management Consulting, Accounting & Operation Management, Design and System Thinking**
 
 ## Education
 * African Development University, Niamey, Niger
@@ -26,19 +26,23 @@ Highly motivated and detail-oriented IT professional with experience in managing
 
 ## Professional Experience
 
-### Research Fellow 
-AI Futures Fellowship, Mexico City, Mexico                                 January 2024 - March 2024
-Research Fellow - AI and Technical Research
+### Research Fellow @ [AI Futures Fellowship](https://aifuturesfellowship.org/) (January 2024 - March 2024)
+
+Mexico City, Mexico
 * Research Project: Singular Learning Theory of Double Descent
 Supervisor: Jesse Hoogland
 
-### Research Fellow @ ILINA Fellowship Program (July 2023 - October 2023)
+[//]: # (You can read the brief project description here)
+
+### Research Fellow @ [ILINA Fellowship Program](https://ilinaprogram.org/) (July 2023 - October 2023)
 Nairobi, Kenya  
 Supervisor: Jake Mendel
-* Worked on Machine Learning projects with PyTorch for technical AI alignment using the Redwood Research ML Camp 2.0 curriculum
+* Worked on Machine Learning [projects](https://ilinaprogram.org/2023-fellows/#:~:text=of%20human%20autonomy.-,sienka%20dounia,-Sienka%20will%20use) with PyTorch for technical AI alignment using the [Redwood Research ML Camp 2.0 curriculum](https://github.com/sienkus/ml-camp-0-participants)
 * Participated in the Principles of Intelligent Behavior in Biological and Social Systems (PIBSS)
 
-### Technical Support Coordinator @ African Development University(November 2021 - July 2023)
+You can read my fellow Notes/Reflections in this [document](https://docs.google.com/document/d/1ungSdBcTrfjVYMMnujCyxmBXHVJ8yEV4uDpFcBzBuSo/edit?usp=sharing)
+
+### Technical Support Coordinator @ [African Development University](https://ilimi.edu.ne/)(November 2021 - July 2023)
 Niamey, Niger 
 * Co-founded the Digital and IT Department of the university
 * Provided technical support for 7 technical project roles to support the roll-out of new applications
