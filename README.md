@@ -29,8 +29,8 @@
 ### Research Fellow @ [AI Futures Fellowship](https://aifuturesfellowship.org/) (January 2024 - March 2024)
 
 Mexico City, Mexico
-* Research Project: Singular Learning Theory of Double Descent
 Supervisor: Jesse Hoogland
+* Research Project: Singular Learning Theory of Double Descent
 
 [//]: # (You can read the brief project description here)
 
@@ -38,11 +38,11 @@ Supervisor: Jesse Hoogland
 Nairobi, Kenya  
 Supervisor: Jake Mendel
 * Worked on Machine Learning [projects](https://ilinaprogram.org/2023-fellows/#:~:text=of%20human%20autonomy.-,sienka%20dounia,-Sienka%20will%20use) with PyTorch for technical AI alignment using the [Redwood Research ML Camp 2.0 curriculum](https://github.com/sienkus/ml-camp-0-participants)
-* Participated in the Principles of Intelligent Behavior in Biological and Social Systems (PIBSS)
+* Participated in the [Principles of Intelligent Behavior in Biological and Social Systems](https://www.pibbss.ai) (PIBSS)
 
 You can read my fellow Notes/Reflections in this [document](https://docs.google.com/document/d/1ungSdBcTrfjVYMMnujCyxmBXHVJ8yEV4uDpFcBzBuSo/edit?usp=sharing)
 
-### Technical Support Coordinator @ [African Development University](https://ilimi.edu.ne/)(November 2021 - July 2023)
+### Technical Support Coordinator @ [African Development University](https://ilimi.edu.ne/) (November 2021 - July 2023)
 Niamey, Niger 
 * Co-founded the Digital and IT Department of the university
 * Provided technical support for 7 technical project roles to support the roll-out of new applications
