@@ -1,4 +1,4 @@
-# Sienka Dounia - IT Professional & Independent AI Researcher
+# IT Professional & Independent AI Researcher
 
 ## Summary
 
@@ -32,15 +32,14 @@ Research Fellow - AI and Technical Research
 * Research Project: Singular Learning Theory of Double Descent
 Supervisor: Jesse Hoogland
 
-### Research Fellow
-ILINA Fellowship Program, Nairobi, Kenya                                          July 2023 - October 2023
+### Research Fellow @ ILINA Fellowship Program (July 2023 - October 2023)
+Nairobi, Kenya  
 Supervisor: Jake Mendel
 * Worked on Machine Learning projects with PyTorch for technical AI alignment using the Redwood Research ML Camp 2.0 curriculum
 * Participated in the Principles of Intelligent Behavior in Biological and Social Systems (PIBSS)
 
-### Technical Support Coordinator - Information Technology
-
-African Development University, Niamey, Niger                                    November 2021 - July 2023
+### Technical Support Coordinator @ African Development University(November 2021 - July 2023)
+Niamey, Niger 
 * Co-founded the Digital and IT Department of the university
 * Provided technical support for 7 technical project roles to support the roll-out of new applications
 * Co-organized the first Hackathon and the first AI Bootcamp of the university
