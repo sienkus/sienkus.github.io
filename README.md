@@ -1,14 +1,29 @@
 # IT Professional & Independent AI Researcher
 
-## Technical Skills
+## Skills
 
-**Programming (Python, C, HTML & CSS, etc.), Machine Learning & Deep Learning with PyTorch, TensorFlow, Keras & OpenCV, Technical Support, Technical Research, Graphic Design & Illustration (Adobe Suite, Canva, etc.), Management Consulting, Accounting & Operation Management, Design and System Thinking**
+* **Programming languages**: Python, JavaScript, C, HTML & CSS
+* **AI/ML frameworks**: PyTorch, TensorFlow, Keras & OpenCV
+* **Cloud platforms**: Google Cloud Platform (GCP), Amazon Web Services (AWS)
+* **Databases**: MySQL
+* **Operating Systems**: Windows, Linux, macOS
+* **Graphic Design & Illustration**: Adobe Suite, Canva
+* **Management Consulting**: Strategy development, Operations management
+* **Business**: Accounting & Operation Management, Design and System Thinking
 
 ## Education
-* African Development University, Niamey, Niger
-    + Bachelor's in Business Administration -Accounting (2021)
+
+* Ecole d'Été sur l'Intelligence Artificielle, Cotonou, Benin (August 2022)
+    + Introduction to Artificial Intelligence and Robotics
+    + [3rd Best Prize](https://youtu.be/ITtCK8GqWPg) out of 150 participants					
+
+* African Development University, Niamey, Niger (November 2021)
+    + Bachelor's in Business Administration -Accounting
     + Dean's List of Academic Excellence
     + Medal of Merit for Academic Excellence
+* Complexe Scolaire Elie Tao Baydo, Pala, Chad (September 2018)
+    + Math and Sciences Baccalaureate
+    + First Class Upper Division                                                                                         
 
 ## Certifications
 
@@ -58,15 +73,6 @@ Niamey, Niger
 * Co-Lead of Google Developer Club, African Development University, Niamey, Niger (December 2020 - August 2021)
     + Organized workshops that introduced and taught technology to more than 50 people
 
-## Skills
-
-* Programming languages: Python, JavaScript
-* AI/ML frameworks: PyTorch, TensorFlow
-* Cloud platforms: Google Cloud Platform (GCP), Amazon Web Services (AWS)
-* Databases: MySQL, MongoDB
-* Operating Systems: Windows, Linux, macOS
-* Graphic Design and Illustration: Adobe Suite, Canva
-* Management Consulting: Strategy development, Operations management
 
 ## Interests
 
