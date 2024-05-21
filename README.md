@@ -12,7 +12,7 @@ Highly motivated and detail-oriented IT professional with experience in managing
 
 ## Certifications
 
-* IBM AI Engineering                                                                          October 2023
+* |IBM AI Engineering|                                                                          October 2023|
 * Introduction to Computer Vision and Image Processing                                        October 2023
 * Deep Neural Networks with PyTorch (with Honors)                                           September 2023
 * Building Deep Learning Models with TensorFlow                                             September 2023
