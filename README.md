@@ -12,19 +12,19 @@ Highly motivated and detail-oriented IT professional with experience in managing
 
 ## Certifications
 
-|* IBM AI Engineering|October 2023|
-|* Introduction to Computer Vision and Image Processing|October 2023|
-* Deep Neural Networks with PyTorch (with Honors)                                           September 2023
-* Building Deep Learning Models with TensorFlow                                             September 2023
-* Introduction to Deep Learning & Neural Networks with Keras                                September 2023
-* Machine Learning with Python                                                                  April 2023
-* Introduction to Artificial Intelligence and Robotics				                          January 2023
-* Project Name: Crop simulation and irrigation optimizer with Nevergrad (Facebook Research)
-3rd Prize, Best Participant out of 150
-* Data Structures                                                                                June 2022
-* Google Africa Developer - Cloud Engineer                                                  December 2021 
-* Google Digital Skills                                                                      January 2020 
-* International Youth Math Competition (Bronze Prize)                                        November 2019
+| * IBM AI Engineering |October 2023|
+| * Introduction to Computer Vision and Image Processing|October 2023|
+| * Deep Neural Networks with PyTorch (with Honors)|September 2023|
+| * Building Deep Learning Models with TensorFlow |September 2023|
+| * Introduction to Deep Learning & Neural Networks with Keras |September 2023|
+| * Machine Learning with Python |April 2023|
+| * Introduction to Artificial Intelligence and Robotics 
++ Project Name: Crop simulation and irrigation optimizer with Nevergrad (Facebook Research)
+3rd Prize, Best Participant out of 150|January 2023|
+| * Data Structures| June 2022|
+| * Google Africa Developer - Cloud Engineer| December 2021|
+| * Google Digital Skills | January 2020|
+| * International Youth Math Competition (Bronze Prize) | November 2019|
 
 ## Professional Experience
 
