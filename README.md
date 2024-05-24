@@ -55,7 +55,7 @@ Supervisor: Jake Mendel
 * Worked on Machine Learning [projects](https://ilinaprogram.org/2023-fellows/#:~:text=of%20human%20autonomy.-,sienka%20dounia,-Sienka%20will%20use) with PyTorch for technical AI alignment using the [Redwood Research ML Camp 2.0 curriculum](https://github.com/sienkus/ml-camp-0-participants)
 * Participated in the [Principles of Intelligent Behavior in Biological and Social Systems](https://www.pibbss.ai) (PIBSS)
 
-You can read my fellow Notes/Reflections in this [document](https://docs.google.com/document/d/1ungSdBcTrfjVYMMnujCyxmBXHVJ8yEV4uDpFcBzBuSo/edit?usp=sharing)
+You can read my fellow Notes/Reflections in this [document](https://docs.google.com/document/d/1ungSdBcTrfjVYMMnujCyxmBXHVJ8yEV4uDpFcBzBuSo/edit?usp=sharing).
 
 ### Technical Support Coordinator @ [African Development University](https://ilimi.edu.ne/) (November 2021 - July 2023)
 Niamey, Niger 
