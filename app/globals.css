@@ -10,6 +10,8 @@
   --color-bittersweet: #f97068;
   --color-pear: #d1d646;
   --color-vivid-sky-blue: #57c4e5;
+  --color-navy: #212738;
+  --color-turquoise: #57c4e5;
 
   /* Define custom fonts */
   --font-sans: 'Montserrat', sans-serif;
@@ -24,16 +26,220 @@
   --color-bittersweet: var(--color-bittersweet);
   --color-pear: var(--color-pear);
   --color-vivid-sky-blue: var(--color-vivid-sky-blue);
+  --color-navy: var(--color-navy);
+  --color-turquoise: var(--color-turquoise);
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
 }
 
-/* Dark mode colors */
+/* Dark mode colors - disabled to keep consistent background */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #0a0a0a;
-    --color-foreground: #ededed;
+    /* Using the same background color for consistency */
+    --color-background: #edf2ef;
+    --color-foreground: #212738;
   }
+}
+
+/* Glow Animation */
+@keyframes moving-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Border glow effect for the quote container */
+.quote-container {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: visible;
+}
+
+.quote-container::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, 
+    rgba(87, 196, 229, 0.1), 
+    rgba(87, 196, 229, 0.8), 
+    rgba(87, 196, 229, 0.1));
+  background-size: 200% 100%;
+  animation: moving-glow 3s ease-in-out infinite;
+  pointer-events: none;
+  filter: blur(8px);
+  z-index: 0;
+
+  /* Cross-browser clipping */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-in;
+
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: intersect;
+
+  padding: 3px; /* keeps inset balanced */
+}
+
+/* Muon Animation */
+@keyframes clockwise-orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+/* Journey Timeline Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(2.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* Journey Timeline Styles */
+.journey-scroll-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.journey-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Ensure proper spacing and prevent cutoff */
+.journey-stage:first-child {
+  padding-left: 2rem;
+}
+
+.journey-stage:last-child {
+  padding-right: 2rem;
+}
+
+.journey-dot-container {
+  position: relative;
+}
+
+.journey-dot {
+  position: relative;
+  z-index: 2;
+}
+
+.journey-pulse {
+  animation: pulse 2s ease-out infinite;
+}
+
+.journey-line {
+  height: 2px;
+  background-color: #333;
+}
+
+/* Responsive styles for journey line */
+@media (max-width: 767px) {
+  .journey-line {
+    height: calc(100% - 2rem) !important;
+    width: 2px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 2rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .journey-line {
+    height: 2px !important;
+    width: 100% !important;
+    top: calc(100% - 4rem) !important;
+    transform: translateY(-50%) !important;
+    left: 0 !important;
+  }
+}
+
+/* Responsive styles for journey dot container */
+@media (max-width: 767px) {
+  .journey-dot-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.muon-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.muon-particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-vivid-sky-blue);
+  box-shadow: 0 0 15px 5px rgba(87, 196, 229, 0.7);
+  opacity: 0.7;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  animation: clockwise-orbit 8s linear infinite;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.muon-particle:nth-child(1) {
+  width: 12px;
+  height: 12px;
+  animation-duration: 8s;
+}
+
+.muon-particle:nth-child(2) {
+  width: 8px;
+  height: 8px;
+  animation-duration: 12s;
+  animation-delay: -2s;
+}
+
+.muon-particle:nth-child(3) {
+  width: 6px;
+  height: 6px;
+  animation-duration: 10s;
+  animation-delay: -4s;
+}
+
+.muon-particle:nth-child(4) {
+  width: 9px;
+  height: 9px;
+  animation-duration: 14s;
+  animation-delay: -6s;
+}
+
+.muon-particle:nth-child(5) {
+  width: 10px;
+  height: 10px;
+  animation-duration: 9s;
+  animation-delay: -3s;
 }
 
 /* Global styles */
@@ -41,4 +247,13 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
+}
+
+/* Custom font classes */
+.font-montserrat {
+  font-family: var(--font-sans);
+}
+
+.font-noto-serif {
+  font-family: var(--font-serif);
 }

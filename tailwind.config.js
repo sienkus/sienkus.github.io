@@ -18,7 +18,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#EDF2EF',
+        background: 'var(--color-background)',
         foreground: '#212738',
         raisinBlack: '#212738',
         bittersweet: '#F97068',
