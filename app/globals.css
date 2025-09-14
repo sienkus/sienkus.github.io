@@ -1,26 +1,44 @@
+/* app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif:wght@400;700&display=swap');
 @import "tailwindcss";
 
+/* Define custom colors */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-background: #edf2ef;
+  --color-foreground: #212738;
+  --color-raisin-black: #212738;
+  --color-bittersweet: #f97068;
+  --color-pear: #d1d646;
+  --color-vivid-sky-blue: #57c4e5;
+
+  /* Define custom fonts */
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Noto Serif', serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Apply custom theme */
+@theme {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-raisin-black: var(--color-raisin-black);
+  --color-bittersweet: var(--color-bittersweet);
+  --color-pear: var(--color-pear);
+  --color-vivid-sky-blue: var(--color-vivid-sky-blue);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
 }
 
+/* Dark mode colors */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
   }
 }
 
+/* Global styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
 }
