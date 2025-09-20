@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Journey from "../components/Journey";
+import Interests from "../components/Interests";
+import Videos from "../components/Videos";
 
 export default function Home() {
   return (
@@ -32,7 +34,7 @@ export default function Home() {
               <div className="muon-particle"></div>
             </div>
             
-            <div className="bg-[linear-gradient(90deg,#212738,#235160)] text-[var(--color-background)] p-8 rounded-3xl shadow-lg relative z-10">
+            <div className="bg-[linear-gradient(90deg,#212738,#235160)] text-[var(--color-background)] p-8 rounded-3xl shadow-lg relative z-10 ">
               <p className="mb-6 font-noto-serif text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel. Morbi non est vitae velit facilisis faucibus. In a justo odio. Quisque quis hendrerit lacus. Ut viverra sed urna in venenatis. Mauris condimentum molestie urna non pharetra. Aenean dignissim dignissim dui, quis efficitur ipsum euismod sed. Pellentesque in tortor blandit, facilisis ipsum non, tempus urna. Duis fermentum lacus eu elementum pulvinar.
               </p>
@@ -49,6 +51,12 @@ export default function Home() {
       
       {/* Journey Timeline Section */}
       <Journey />
+
+      {/* Interests Section */}
+      <Interests />
+
+      {/* Videos Section */}
+      <Videos />
     </div>
   );
 }

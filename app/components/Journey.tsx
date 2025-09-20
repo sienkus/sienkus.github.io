@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import Image from 'next/image'; // 1. Import the Image component
 
 type JourneyStage = {
   title: string;
@@ -9,116 +10,101 @@ type JourneyStage = {
 };
 
 const journeyStages: JourneyStage[] = [
-  {
-    title: 'Stage 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
-    year: '2016'
-  },
-  {
-    title: 'Stage 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
-    year: '2017'
-  },
-  {
-    title: 'Stage 3',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
-    year: '2018'
-  },
-  {
-    title: 'Stage 4',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
-    year: '2019'
-  },
-  {
-    title: 'Stage 5',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
-    year: '2020'
-  },
-  {
-    title: 'Stage 6',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
-    year: '2021'
-  },
-  {
-    title: 'Stage 7',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
-    year: '2022'
-  },
-  {
-    title: 'Stage 8',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
-    year: '2023'
-  }
+    {
+        title: 'Stage 1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
+        year: '2016'
+    },
+    {
+        title: 'Stage 2',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
+        year: '2017'
+    },
+    {
+        title: 'Stage 3',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
+        year: '2018'
+    },
+    {
+        title: 'Stage 4',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
+        year: '2019'
+    },
+    {
+        title: 'Stage 5',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
+        year: '2020'
+    },
+    {
+        title: 'Stage 6',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum lacus lectus, a pellentesque felis egestas vel.',
+        year: '2021'
+    },
 ];
 
-export default function Journey() {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+const Journey = () => {
+    const containerRef = useRef<HTMLDivElement>(null);
 
-  // Handle horizontal scrolling with mouse wheel
-  useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    if (!scrollContainer) return;
+    useEffect(() => {
+        const container = containerRef.current;
+        if (container) {
+            const handleWheel = (e: WheelEvent) => {
+                if (e.deltaY !== 0) {
+                    e.preventDefault();
+                    container.scrollLeft += e.deltaY;
+                }
+            };
+            container.addEventListener('wheel', handleWheel);
+            return () => {
+                container.removeEventListener('wheel', handleWheel);
+            };
+        }
+    }, []);
 
-    const handleWheel = (e: WheelEvent) => {
-      if (e.deltaY !== 0) {
-        e.preventDefault();
-        scrollContainer.scrollLeft += e.deltaY;
-      }
-    };
-
-    scrollContainer.addEventListener('wheel', handleWheel, { passive: false });
-
-    return () => {
-      scrollContainer.removeEventListener('wheel', handleWheel);
-    };
-  }, []);
-
-  return (
-    <div className="my-16 px-4">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold mb-2">my journey</h2>
-        <div className="flex justify-center">
-          <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 25C20 25 30 1 50 1C70 1 80 49 100 49C120 49 130 1 150 1C170 1 180 25 199 25" stroke="#333" strokeWidth="1" fill="none" />
-            <path d="M199 25L190 20M199 25L190 30" stroke="#333" strokeWidth="1" fill="none" />
-            <circle cx="1" cy="25" r="5" fill="#333" />
-          </svg>
-        </div>
-      </div>
-
-      <div
-        ref={scrollContainerRef}
-        className="journey-scroll-container overflow-x-auto md:overflow-x-auto overflow-y-auto pb-8 hide-scrollbar"
-      >
-        <div className="journey-timeline relative min-w-max md:min-w-max px-4 md:px-16">
-          {/* Timeline stages */}
-          <div className="flex flex-col md:flex-row justify-between min-w-max md:min-w-max relative pt-8 md:pt-0" style={{ width: `${Math.max(journeyStages.length * 300, 1200)}px` }}>
-            {journeyStages.map((stage, index) => (
-              <div key={index} className="journey-stage w-full md:w-64 flex flex-col items-center relative mb-8 md:mb-0">
-                {/* Top content - displayed above the timeline */}
-                <div className="mb-4 md:mb-8 text-center">
-                  <h3 className="font-bold text-lg">{stage.title}</h3>
-                  <p className="text-sm">{stage.description}</p>
-                </div>
-
-                {/* Timeline dot - positioned exactly on the line */}
-                <div className="journey-dot-container relative">
-                  <div className="journey-dot bg-[var(--color-bittersweet)] w-4 h-4 rounded-full relative z-20 border-2 border-[var(--color-background)] journey-pulse">
-                  </div>
-                </div>
-
-                {/* Bottom content - displayed below the timeline */}
-                <div className="text-center mt-4 md:mt-8">
-                  <p className="text-lg font-bold">{stage.year}</p>
-                </div>
+    return (
+        <div className="journey-container-wrapper w-full max-w-6xl mx-auto px-4 md:px-8 mt-20">
+            <div className="text-center mb-12">
+              {/* 2. Add a flex container for the image and title */}
+              <div className="flex justify-center items-center mb-4">
+                <Image
+                  src="/journey-icon.png" // 3. Add your image here
+                  alt="Journey Icon"
+                  width={98} // Adjust size as needed
+                  height={98} // Adjust size as needed
+                  className="mr-4" // Adds space between image and title
+                />
               </div>
-            ))}
-
-            {/* Timeline line - positioned to go through the center of the dots */}
-            <div className="journey-line absolute z-0"></div>
-          </div>
+              <h2 className="font-montserrat text-2xl font-bold text-[var(--color-navy)] mb-25">my journey</h2>
+              {/* <p className="text-lg text-gray-600">A timeline of my personal and professional growth.</p> */}
+            </div>
+            <div ref={containerRef} className="journey-container overflow-x-auto">
+                <div className="mx-auto w-full max-w-7xl px-4 md:px-16 text-[var(--color-navy)]">
+                    <div className="flex flex-col md:flex-row justify-between min-w-max md:min-w-max relative pt-12 md:pt-0 md:items-center md:h-80" style={{ width: `${Math.max(journeyStages.length * 300, 1200)}px` }}>
+                        {journeyStages.map((stage, index) => (
+                            <div key={index} className="journey-stage w-full md:w-64 flex flex-col items-center md:justify-center relative mb-8 md:mb-0">
+                                {/* Top content - positioned absolutely on desktop */}
+                                <div className="text-center md:absolute md:bottom-full md:mb-4 md:z-10">
+                                    <h3 className="font-montserrat font-bold text-lg">{stage.title}</h3>
+                                    <p className="font-sans-serrif text-sm">{stage.description}</p>
+                                </div>
+                                {/* Timeline dot - this is now the central anchor for alignment */}
+                                <div className="journey-dot-container relative my-4 md:my-0">
+                                    <div className="journey-dot bg-[var(--color-navy)] w-5 h-5 rounded-full border-2 border-white journey-pulse">
+                                    </div>
+                                </div>
+                                {/* Bottom content - positioned absolutely on desktop */}
+                                <div className="text-center md:absolute md:top-full md:mt-4 md:z-10">
+                                    <p className="font-montserrat text-lg font-bold">{stage.year}</p>
+                                </div>
+                            </div>
+                        ))}
+                        {/* Timeline line */}
+                        <div className="journey-line absolute bg-[var(--color-navy)]"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
-}
+    );
+};
+
+export default Journey;

@@ -1,6 +1,7 @@
 // app/layout.tsx
 import { Montserrat, Noto_Serif } from 'next/font/google';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './globals.css';
 
 const montserrat = Montserrat({
@@ -23,11 +24,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body className={`${notoSerif.className} bg-[var(--color-background)] text-foreground`}>
+      <body className={`${notoSerif.className} bg-[var(--color-background)] text-foreground min-h-screen flex flex-col`}>
         <Navbar />
-        <main className="container mx-auto p-4">{children}</main>
+        <main className="container mx-auto p-4 flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
 }
-

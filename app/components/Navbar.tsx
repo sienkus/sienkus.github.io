@@ -16,8 +16,8 @@ const Navbar = () => {
     <header className="px-5 py-3 bg-[var(--color-background)] flex justify-center">
       {/* Navbar container with dark navy background and rounded corners */}
       <div className="bg-[linear-gradient(90deg,#212738,#235160)] px-6 py-3 rounded-4xl shadow-md inline-flex mx-auto w-auto min-w-[500px]">
-        <nav className="flex justify-center">
-          <div className="flex space-x-6"> {/* Ensure the same space-x-6 class here */}
+        <nav className="flex justify-center items-center">
+          <div className="flex space-x-6 items-center"> {/* Ensure the same space-x-6 class here */}
             <Link href="/" className={`${getLinkClassNames('/')} text-[var(--color-background)] hover:text-[var(--color-turquoise)]`}>
               about me
             </Link>
@@ -30,6 +30,22 @@ const Navbar = () => {
             <Link href="/contact" className={`${getLinkClassNames('/contact')} text-[var(--color-background)] hover:text-[var(--color-turquoise)]`}>
               my contact
             </Link>
+            <button className="ml-4 text-[var(--color-background)] hover:text-[var(--color-turquoise)]">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
           </div>
         </nav>
       </div>
