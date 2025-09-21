@@ -23,7 +23,7 @@ const ContactPage = () => {
           <div className="h-full flex flex-col justify">
             <div className="text-justify  space-y-6">
               <p className="font-noto-serif leading-relaxed">
-                If you're interested in collaborating, want to discuss something interesting, or think I could help with anything, feel free to shoot me an email at firstname.lastname[at]gmail[dot]com.
+                If you're interested in collaborating, want to discuss something interesting, or think I could help with anything, feel free to shoot me an email at sienka[dot]dounia[at]gmail[dot]com.
               </p>
               
               <p className="font-noto-serif leading-relaxed">
@@ -33,7 +33,7 @@ const ContactPage = () => {
           </div>
           {/* Social Media Icons */}
               <div className="flex justify-center space-x-4 mt-6">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/sienka-dounia" target="_blank" rel="noopener noreferrer">
                   <Image
                     src="/icon-linkedin.png"
                     alt="LinkedIn"
@@ -42,7 +42,7 @@ const ContactPage = () => {
                     className="hover:opacity-75"
                   />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Image
                     src="/icon-youtube.png"
                     alt="YouTube"

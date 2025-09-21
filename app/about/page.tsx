@@ -16,7 +16,7 @@ const AboutPage = () => {
           <div className="bg-[var(--color-turquoise)] p-6 rounded-lg shadow-md">
             <div className="relative w-full h-64 mb-6">
               <Image 
-                src="/profile-image.svg" 
+                src="/profile-photo.png" 
                 alt="Profile Image"
                 fill
                 className="object-contain"
@@ -51,18 +51,6 @@ const AboutPage = () => {
               <p>
                 Morbi consequat nunc nec nisl ultricies, eget vulputate urna efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sapien pretium sapien ullamcorper tristique. Maecenas placerat lectus non sodales commodo.
               </p>
-            </div>
-
-            <h2 className="text-2xl font-montserrat font-bold text-gray-800 mt-8 mb-4">Education</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-xl font-montserrat font-semibold text-gray-800">Master's in Computer Science</h3>
-                <p className="font-noto-serif text-gray-600">University of Technology, 2018-2020</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-montserrat font-semibold text-gray-800">Bachelor's in Software Engineering</h3>
-                <p className="font-noto-serif text-gray-600">State University, 2014-2018</p>
-              </div>
             </div>
           </div>
         </div>

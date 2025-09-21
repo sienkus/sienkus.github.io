@@ -7,28 +7,14 @@ import FilterBox from '../components/FilterBox'
 const ProjectsPage = () => {
   const [filters, setFilters] = useState({ search: '', domain: '', duration: '' })
 
-  // Sample project data
+  // Project data
   const projects = [
     {
-      id: 1,
-      title: 'project one',
-      description: 'A brief description of project one and its features.',
-      imageUrl: '/file.svg',
-      link: '#'
-    },
-    {
-      id: 2,
-      title: 'project two',
-      description: 'A brief description of project two and its technologies.',
-      imageUrl: '/globe.svg',
-      link: '#'
-    },
-    {
-      id: 3,
-      title: 'project three',
-      description: 'A brief description of project three and its implementation.',
-      imageUrl: '/window.svg',
-      link: '#'
+      id: 'how-i-built-this-website',
+      title: 'how I built this website',
+      description: 'A personal project showcasing the creation of this website using free tools, Next.js, and Tailwind CSS — from Sunday idea to deployed site.',
+      imageUrl: '/this-website.png',
+      link: '/projects/how-i-built-this-website'
     }
   ]
 
@@ -59,7 +45,7 @@ const ProjectsPage = () => {
                     src={project.imageUrl}
                     alt={project.title}
                     fill
-                    className="object-contain p-4"
+                    className="object-contain p-4 rounded-2xl"
                   />
                 </div>
                 <div className="p-6">
