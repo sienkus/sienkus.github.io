@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   output: 'export',
   basePath: '/my-website',
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
